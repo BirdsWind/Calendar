@@ -1,21 +1,15 @@
-//
-//  ContentView.swift
-//  RayCal
-//
-//  Created by humlan on 2024-12-27.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedDate = Date()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                DayView(date: Date(), selectedDate: $selectedDate)
+            }
+            .navigationTitle("Calendar")
         }
-        .padding()
     }
 }
 

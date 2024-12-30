@@ -29,9 +29,25 @@
 		2AD13F722D1EEB1500AE81C7 /* RayCalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RayCalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2AD13F922D1EEC8E00AE81C7 /* Exceptions for "RayCal" folder in "RayCalTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Backend/appointments.json,
+				Backend/locations.json,
+				Backend/patients.json,
+				Backend/users.json,
+			);
+			target = 2AD13F672D1EEB1500AE81C7 /* RayCalTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2AD13F5A2D1EEB1400AE81C7 /* RayCal */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2AD13F922D1EEC8E00AE81C7 /* Exceptions for "RayCal" folder in "RayCalTests" target */,
+			);
 			path = RayCal;
 			sourceTree = "<group>";
 		};

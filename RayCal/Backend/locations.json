@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "Treatment room 1",
+    "Id": "0ea71104-2130-4ab9-92f2-4cc11f1804fb"
+  },
+  {
+    "Name": "Treatment room 2",
+    "Id": "4d4dd83b-3d77-4186-a01c-6bfa025c6bd1"
+  },
+  {
+    "Name": "Lab",
+    "Id": "d556e870-082d-41d6-a517-750a6c6aadad"
+  },
+  {
+    "Name": "Doctor\u0027s office",
+    "Id": "90775842-e0c8-4e1f-93a5-fc909772ce61"
+  }
+]
