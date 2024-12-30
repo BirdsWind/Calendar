@@ -1,2 +1,2 @@
 # Calendar
-A calendar App With SwiftUI
+A calendar app with SwiftUI
