@@ -1,17 +1,20 @@
 import Foundation
 
 struct Patient: Codable, Identifiable {
+    let id: String
     let patientId: Int
     let firstName: String
     let lastName: String
-    let id: String
+    var fullName: String {
+        "\(firstName) \(lastName)"
+    }
     
     // Coding keys to map JSON keys to Swift property names
     enum CodingKeys: String, CodingKey {
+        case id = "Id"
         case patientId = "PatientId"
         case firstName = "FirstName"
         case lastName = "LastName"
-        case id = "Id"
     }
 }
 
@@ -48,11 +51,8 @@ struct Appointment: Codable, Identifiable {
         
         let calendar = Calendar.current
         
-        
         // Parse StartDateTime as Date
         let startDateTimeString = try container.decode(String.self, forKey: .startDateTime)
-        // Split the time string into components (hour, minute, second)
-        let timeComponents = startDateTimeString.split(separator: ":").compactMap { Int($0) }
         
         // Parse the time directly into components
         let timeFormatter = DateFormatter()
@@ -87,3 +87,29 @@ struct Appointment: Codable, Identifiable {
     }
 }
 
+
+struct Location: Codable, Identifiable {
+    let name: String
+    let id: String
+
+    enum CodingKeys: String, CodingKey {
+        case name = "Name"
+        case id = "Id"
+    }
+}
+
+
+struct User: Codable, Identifiable {
+    let id: String
+    let firstName: String
+    let lastName: String
+    var fullName: String {
+        "\(firstName) \(lastName)"
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "Id"
+        case firstName = "FirstName"
+        case lastName = "LastName"
+    }
+}

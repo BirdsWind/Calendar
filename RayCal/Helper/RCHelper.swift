@@ -1,15 +1,5 @@
 import SwiftUI
 
-extension Color {
-    static func random() -> Color {
-        return Color(
-            red: Double.random(in: 0...1),
-            green: Double.random(in: 0...1),
-            blue: Double.random(in: 0...1)
-        )
-    }
-}
-
 
 extension DateFormatter {
     static var utcHourMinFormatter: DateFormatter {
@@ -20,12 +10,6 @@ extension DateFormatter {
     }
 }
 
-
-struct SampleView: View {
-    var body: some View {
-        Text("Hello, World!")
-    }
-}
 
 
 

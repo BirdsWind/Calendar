@@ -1,7 +1,7 @@
 import Foundation
 
 @MainActor // Ensures all @Published properties are updated on the main thread
-class RCViewModel: ObservableObject {
+class RCDayViewModel: ObservableObject {
     @Published var appointments: [Appointment] = []
     
     var overlappedAppointments: [String: Int] = [:]

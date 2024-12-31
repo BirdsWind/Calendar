@@ -7,7 +7,7 @@ struct DayView: View {
     
     let hourHeight = 150.0
     
-    @StateObject private var viewModel: RCViewModel = RCViewModel() // Bind the ViewModel to the View
+    @StateObject private var viewModel: RCDayViewModel = RCDayViewModel() // Bind the ViewModel to the View
     
     
     var body: some View {
@@ -69,7 +69,7 @@ struct DayView: View {
 
         let xOffset = Double(overlapIndex) * 70.0 // Adjust horizontal spacing for overlaps
         
-        return NavigationLink(destination: RCAppointmentView(appointment: appointment)) {
+        return NavigationLink(destination: RCAppointmentDetailView(appointment: appointment)) {
             HStack {
                 Text(DateFormatter.utcHourMinFormatter.string(from: appointment.startDateTime))
                 Text("-")
@@ -89,7 +89,7 @@ struct DayView: View {
                     }
                     
                     RoundedRectangle(cornerRadius: 8)
-                        .fill(Color.random()).opacity(0.5)
+                        .fill(.teal).opacity(0.5)
                 }
                
                 
