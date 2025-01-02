@@ -73,7 +73,7 @@ struct DayView: View {
             RoundedRectangle(cornerRadius: 8)
                 .fill(.teal).opacity(0.5).border(.orange, width: 3)
         )
-        .position(x: 150 + xOffset , y: yPosition(appointment: appointment))
+        .offset(x: 150 + xOffset , y: yPosition(appointment: appointment)) // that is the center of the HStack
     }
     
     
