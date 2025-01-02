@@ -16,8 +16,8 @@ class RCDataLoader: ObservableObject {
     
     func fetchData() async {
         guard let locationURL = Bundle.main.url(forResource: "locations", withExtension: "json"),
-        let patientURL = Bundle.main.url(forResource: "patient", withExtension: "json"),
-        let userURL = Bundle.main.url(forResource: "user", withExtension: "json")
+        let patientURL = Bundle.main.url(forResource: "patients", withExtension: "json"),
+        let userURL = Bundle.main.url(forResource: "users", withExtension: "json")
         else {
             print("Failed to locate file in bundle.")
             return

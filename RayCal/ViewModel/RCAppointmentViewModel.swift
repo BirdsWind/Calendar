@@ -3,9 +3,9 @@ import Foundation
 
 struct AppointmentDetail {
     let id: String
-    let patientName: String
-    let locationName: String
-    let userName: String
+    let patientName: String?
+    let locationName: String?
+    let userName: String?
     let startTime: Date
     let duration: Int
     let title: String
@@ -60,18 +60,15 @@ class RCAppointmentViewModel: ObservableObject {
     
     /// Compose the detail from loaded data
     private func composeDetail() {
-        guard let patient = dataLoader.patients.first(where: { $0.id == appointment.id }),
-              let location = dataLoader.locations.first(where: { $0.id == appointment.id }),
-              let user = dataLoader.users.first(where: { $0.id == appointment.id }) else {
-            print("Failed to find matching data.")
-            return
-        }
+        let patient = dataLoader.patients.first(where: { $0.id == appointment.id })
+        let location = dataLoader.locations.first(where: { $0.id == appointment.id })
+        let user = dataLoader.users.first(where: { $0.id == appointment.id })
         
         self.appointmentDetail = AppointmentDetail(
             id: appointment.id,
-            patientName: patient.fullName,
-            locationName: location.name,
-            userName: user.fullName,
+            patientName: patient?.fullName,
+            locationName: location?.name,
+            userName: user?.fullName,
             startTime: appointment.startDateTime,
             duration: appointment.durationInMinutes,
             title: appointment.appointmentTitle

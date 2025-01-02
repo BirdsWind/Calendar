@@ -19,7 +19,7 @@ struct Patient: Codable, Identifiable {
 }
 
 
-struct Appointment: Codable, Identifiable {
+struct Appointment: Codable, Identifiable, Hashable {
     let id: String
     let rayCareUsers: [String]
     let patient: String
