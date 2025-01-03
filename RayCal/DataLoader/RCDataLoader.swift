@@ -8,6 +8,8 @@ class RCDataLoader: ObservableObject {
     
     @Published var errorMessage: String?
     
+    @Published var hasLoaded = false // Track loading state
+    
     // The single shared instance
     static let shared = RCDataLoader()
     
@@ -26,15 +28,18 @@ class RCDataLoader: ObservableObject {
         do {
             let locationData = try Data(contentsOf: locationURL)
             let decodedLocations = try JSONDecoder().decode([Location].self, from: locationData)
-            self.locations = decodedLocations
+            locations = decodedLocations
             
             let patientData = try Data(contentsOf: patientURL)
             let decodedPatients = try JSONDecoder().decode([Patient].self, from: patientData)
-            self.patients = decodedPatients
+           patients = decodedPatients
             
             let userData = try Data(contentsOf: userURL)
             let decodedUsers = try JSONDecoder().decode([User].self, from: userData)
             users = decodedUsers
+            hasLoaded = true
+            print("data loaded")
+            print(patients)
         } catch {
             print("Failed to load or decode JSON")
         }

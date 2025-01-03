@@ -23,6 +23,9 @@ class RCAppointmentViewModel: ObservableObject {
     
     init(appointment: Appointment) {
         self.appointment = appointment
+        Task {
+                await loadData() // Asynchronous call
+            }
         self.observeDataLoader()
     }
     
@@ -31,13 +34,13 @@ class RCAppointmentViewModel: ObservableObject {
         dataLoader.$patients
             .combineLatest(dataLoader.$users, dataLoader.$locations)
             .sink { [weak self] _, _, _ in
-                self?.composeDetail()
+                    self?.composeDetail()
             }
             .store(in: &cancellables)
     }
     
     // Loads all data through the DataLoader
-        func loadData() {
+        func loadData() async {
             Task {
                 // Trigger the DataLoader to fetch data
                 await dataLoader.fetchData()
@@ -60,9 +63,9 @@ class RCAppointmentViewModel: ObservableObject {
     
     /// Compose the detail from loaded data
     private func composeDetail() {
-        let patient = dataLoader.patients.first(where: { $0.id == appointment.id })
-        let location = dataLoader.locations.first(where: { $0.id == appointment.id })
-        let user = dataLoader.users.first(where: { $0.id == appointment.id })
+        let patient = dataLoader.patients.first(where: { $0.id == appointment.patient })
+        let location = dataLoader.locations.first(where: { $0.id == appointment.location })
+        let user = dataLoader.users.first(where: { $0.id == appointment.rayCareUsers.first })
         
         self.appointmentDetail = AppointmentDetail(
             id: appointment.id,

@@ -49,8 +49,9 @@ struct RCAppointmentDetailView: View {
         .cornerRadius(12)
         .shadow(radius: 4)
         .padding()
-        .onAppear {
-            viewModel.loadData()
-        }
+        
     }
+    
+    
+
 }
