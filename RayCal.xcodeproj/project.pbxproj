@@ -24,14 +24,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AC21CBD2D2E7A7E00A37ADE /* Combine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Combine.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/System/Library/Frameworks/Combine.framework; sourceTree = DEVELOPER_DIR; };
 		2AD13F582D1EEB1400AE81C7 /* RayCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RayCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD13F682D1EEB1500AE81C7 /* RayCalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RayCalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD13F722D1EEB1500AE81C7 /* RayCalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RayCalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2AD13F922D1EEC8E00AE81C7 /* Exceptions for "RayCal" folder in "RayCalTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Backend/appointments.json,
+				Backend/locations.json,
+				Backend/patients.json,
+				Backend/users.json,
+			);
+			target = 2AD13F672D1EEB1500AE81C7 /* RayCalTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2AD13F5A2D1EEB1400AE81C7 /* RayCal */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2AD13F922D1EEC8E00AE81C7 /* Exceptions for "RayCal" folder in "RayCalTests" target */,
+			);
 			path = RayCal;
 			sourceTree = "<group>";
 		};
@@ -72,12 +89,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AC21CBC2D2E7A7E00A37ADE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AC21CBD2D2E7A7E00A37ADE /* Combine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2AD13F4F2D1EEB1400AE81C7 = {
 			isa = PBXGroup;
 			children = (
 				2AD13F5A2D1EEB1400AE81C7 /* RayCal */,
 				2AD13F6B2D1EEB1500AE81C7 /* RayCalTests */,
 				2AD13F752D1EEB1500AE81C7 /* RayCalUITests */,
+				2AC21CBC2D2E7A7E00A37ADE /* Frameworks */,
 				2AD13F592D1EEB1400AE81C7 /* Products */,
 			);
 			sourceTree = "<group>";

@@ -1,10 +1,3 @@
-//
-//  RayCalUITestsLaunchTests.swift
-//  RayCalUITests
-//
-//  Created by humlan on 2024-12-27.
-//
-
 import XCTest
 
 final class RayCalUITestsLaunchTests: XCTestCase {

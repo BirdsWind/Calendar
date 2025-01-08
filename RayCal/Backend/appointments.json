@@ -1,0 +1,203 @@
+[
+  {
+    "Id": "7bd0f5d7-027a-45f3-86f4-455a4947fac0",
+    "RayCareUsers": [
+      "635347fe-2c36-43e4-b9cb-bfb5f0bce74c"
+    ],
+    "Patient": "142c21b4-78ef-46e2-b8b8-7a79aee58161",
+    "Location": "4d4dd83b-3d77-4186-a01c-6bfa025c6bd1",
+    "StartDateTime": "08:20:00",
+    "DurationInMinutes": 30,
+    "AppointmentTitle": "Treatment"
+  },
+  {
+    "Id": "555e2cdf-724f-4934-a88a-7e6166c5f048",
+    "RayCareUsers": [
+      "13609e52-a1a4-4b8d-9af9-ec3888171873"
+    ],
+    "Patient": "cc0de5dd-76c8-4d2f-9472-b52c740b1680",
+    "Location": "90775842-e0c8-4e1f-93a5-fc909772ce61",
+    "StartDateTime": "09:20:00",
+    "DurationInMinutes": 60,
+    "AppointmentTitle": "Follow up"
+  },
+  {
+    "Id": "7fd23d74-0ac0-48ea-a208-c97beb7187b9",
+    "RayCareUsers": [
+      "635347fe-2c36-43e4-b9cb-bfb5f0bce74c"
+    ],
+    "Patient": "7cbe486e-673e-40b9-a83d-f6cc4157d4b6",
+    "Location": "4d4dd83b-3d77-4186-a01c-6bfa025c6bd1",
+    "StartDateTime": "10:40:00",
+    "DurationInMinutes": 10,
+    "AppointmentTitle": "Treatment"
+  },
+  {
+    "Id": "5e7c960b-777f-472e-b83d-d79a59cb1650",
+    "RayCareUsers": [
+      "13609e52-a1a4-4b8d-9af9-ec3888171873"
+    ],
+    "Patient": "5ec916d4-3ca1-46f4-94d6-936aa3777f3f",
+    "Location": "90775842-e0c8-4e1f-93a5-fc909772ce61",
+    "StartDateTime": "10:10:00",
+    "DurationInMinutes": 20,
+    "AppointmentTitle": "Consultation"
+  },
+  {
+    "Id": "ace16c2b-7e3c-480b-9c79-c038af3ccd6a",
+    "RayCareUsers": [
+      "635347fe-2c36-43e4-b9cb-bfb5f0bce74c"
+    ],
+    "Patient": "88900426-39b5-487e-add3-5c95a44cac8c",
+    "Location": "0ea71104-2130-4ab9-92f2-4cc11f1804fb",
+    "StartDateTime": "11:00:00",
+    "DurationInMinutes": 15,
+    "AppointmentTitle": "Treatment"
+  },
+  {
+    "Id": "47db5106-ab42-4f9a-84a8-75c1e654344f",
+    "RayCareUsers": [
+      "635347fe-2c36-43e4-b9cb-bfb5f0bce74c"
+    ],
+    "Patient": "142c21b4-78ef-46e2-b8b8-7a79aee58161",
+    "Location": "4d4dd83b-3d77-4186-a01c-6bfa025c6bd1",
+    "StartDateTime": "12:10:00",
+    "DurationInMinutes": 30,
+    "AppointmentTitle": "Treatment"
+  },
+  {
+    "Id": "34ac30f9-4129-45c0-be6b-ac73ccb46358",
+    "RayCareUsers": [
+      "635347fe-2c36-43e4-b9cb-bfb5f0bce74c",
+      "6c991b27-e329-4422-9651-4a4f11770b41"
+    ],
+    "Patient": "cc0de5dd-76c8-4d2f-9472-b52c740b1680",
+    "Location": "d556e870-082d-41d6-a517-750a6c6aadad",
+    "StartDateTime": "12:20:00",
+    "DurationInMinutes": 5,
+    "AppointmentTitle": "Blood sample"
+  },
+  {
+    "Id": "6cb7829f-3f12-43a2-962d-91f713f36bbc",
+    "RayCareUsers": [
+      "635347fe-2c36-43e4-b9cb-bfb5f0bce74c"
+    ],
+    "Patient": "7cbe486e-673e-40b9-a83d-f6cc4157d4b6",
+    "Location": "90775842-e0c8-4e1f-93a5-fc909772ce61",
+    "StartDateTime": "13:20:00",
+    "DurationInMinutes": 30,
+    "AppointmentTitle": "Consultation"
+  },
+  {
+    "Id": "cf1cf150-9d28-40c0-b807-33a2c8a21523",
+    "RayCareUsers": [
+      "13609e52-a1a4-4b8d-9af9-ec3888171873"
+    ],
+    "Patient": "5ec916d4-3ca1-46f4-94d6-936aa3777f3f",
+    "Location": "0ea71104-2130-4ab9-92f2-4cc11f1804fb",
+    "StartDateTime": "13:00:00",
+    "DurationInMinutes": 30,
+    "AppointmentTitle": "Treatment"
+  },
+  {
+    "Id": "b93037cc-4d80-422f-aea9-5c02df9ecf9e",
+    "RayCareUsers": [
+      "635347fe-2c36-43e4-b9cb-bfb5f0bce74c"
+    ],
+    "Patient": "88900426-39b5-487e-add3-5c95a44cac8c",
+    "Location": "0ea71104-2130-4ab9-92f2-4cc11f1804fb",
+    "StartDateTime": "14:40:00",
+    "DurationInMinutes": 20,
+    "AppointmentTitle": "Treatment"
+  },
+  {
+    "Id": "22882f6f-3c40-439d-8a3b-5fd25e68db95",
+    "RayCareUsers": [
+      "635347fe-2c36-43e4-b9cb-bfb5f0bce74c"
+    ],
+    "Patient": "142c21b4-78ef-46e2-b8b8-7a79aee58161",
+    "Location": "0ea71104-2130-4ab9-92f2-4cc11f1804fb",
+    "StartDateTime": "14:50:00",
+    "DurationInMinutes": 30,
+    "AppointmentTitle": "Treatment"
+  },
+  {
+    "Id": "4c7cf87d-fcf8-461b-b098-2d07e521aa01",
+    "RayCareUsers": [
+      "13609e52-a1a4-4b8d-9af9-ec3888171873",
+      "6c991b27-e329-4422-9651-4a4f11770b41"
+    ],
+    "Patient": "cc0de5dd-76c8-4d2f-9472-b52c740b1680",
+    "Location": "d556e870-082d-41d6-a517-750a6c6aadad",
+    "StartDateTime": "15:05:00",
+    "DurationInMinutes": 5,
+    "AppointmentTitle": "Blood sample"
+  },
+  {
+    "Id": "722ca6f9-2489-410b-a088-ed83330009e2",
+    "RayCareUsers": [
+      "635347fe-2c36-43e4-b9cb-bfb5f0bce74c"
+    ],
+    "Patient": "7cbe486e-673e-40b9-a83d-f6cc4157d4b6",
+    "Location": "0ea71104-2130-4ab9-92f2-4cc11f1804fb",
+    "StartDateTime": "16:20:00",
+    "DurationInMinutes": 45,
+    "AppointmentTitle": "Treatment"
+  },
+  {
+    "Id": "c15abb07-7b76-4085-94fd-bf4c16c43433",
+    "RayCareUsers": [
+      "13609e52-a1a4-4b8d-9af9-ec3888171873"
+    ],
+    "Patient": "5ec916d4-3ca1-46f4-94d6-936aa3777f3f",
+    "Location": "d556e870-082d-41d6-a517-750a6c6aadad",
+    "StartDateTime": "16:30:00",
+    "DurationInMinutes": 10,
+    "AppointmentTitle": "Blood sample"
+  },
+  {
+    "Id": "6c77f294-331e-4f66-a034-3160cd51169c",
+    "RayCareUsers": [
+      "635347fe-2c36-43e4-b9cb-bfb5f0bce74c",
+      "6c991b27-e329-4422-9651-4a4f11770b41"
+    ],
+    "Patient": "54a3f8ad-44dd-458c-850c-ce86572a8b0f",
+    "Location": "0ea71104-2130-4ab9-92f2-4cc11f1804fb",
+    "StartDateTime": "16:10:00",
+    "DurationInMinutes": 30,
+    "AppointmentTitle": "Treatment"
+  },
+  {
+    "Id": "7516b63b-880b-46eb-94bc-13dbe1d21ca7",
+    "RayCareUsers": [
+      "635347fe-2c36-43e4-b9cb-bfb5f0bce74c"
+    ],
+    "Patient": "142c21b4-78ef-46e2-b8b8-7a79aee58161",
+    "Location": "90775842-e0c8-4e1f-93a5-fc909772ce61",
+    "StartDateTime": "17:10:00",
+    "DurationInMinutes": 60,
+    "AppointmentTitle": "Follow up"
+  },
+  {
+    "Id": "dc0c53f9-f053-4dec-88ad-688b97a1b42e",
+    "RayCareUsers": [
+      "13609e52-a1a4-4b8d-9af9-ec3888171873"
+    ],
+    "Patient": "cc0de5dd-76c8-4d2f-9472-b52c740b1680",
+    "Location": "d556e870-082d-41d6-a517-750a6c6aadad",
+    "StartDateTime": "17:30:00",
+    "DurationInMinutes": 10,
+    "AppointmentTitle": "Blood sample"
+  },
+  {
+    "Id": "691a332f-4d53-47f2-a76e-3c29671f8e28",
+    "RayCareUsers": [
+      "635347fe-2c36-43e4-b9cb-bfb5f0bce74c"
+    ],
+    "Patient": "7cbe486e-673e-40b9-a83d-f6cc4157d4b6",
+    "Location": "4d4dd83b-3d77-4186-a01c-6bfa025c6bd1",
+    "StartDateTime": "17:50:00",
+    "DurationInMinutes": 30,
+    "AppointmentTitle": "Treatment"
+  }
+]
