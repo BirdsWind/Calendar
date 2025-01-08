@@ -15,10 +15,10 @@ The Calendar iOS app displays a list of events in a day view. By clicking on eac
 ## Result
 
 ### Day View 
-![Day View](./Demo/DayView.png)
+<img src="./Demo/DayView.png" alt="Day View" width="50%">
 
 ### Appointment View 
-![Appointment View](./Demo/AppointmentView.png)
+<img src="./Demo/AppointmentView.png" alt="Appointment View" width="50%">
 
 ## App Structure 
 
