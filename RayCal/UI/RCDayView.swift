@@ -2,6 +2,7 @@ import SwiftUI
 
 struct DayView: View {
     let date: Date
+    //Connect and share a value in two views, so the change in one can automatically update the other
     @Binding var selectedDate: Date
     
     @StateObject private var viewModel: RCDayViewModel = RCDayViewModel() // Bind the ViewModel to the View

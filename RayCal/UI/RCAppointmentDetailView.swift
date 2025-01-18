@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct RCAppointmentDetailView: View {
+    // Single，persistent instance of observable object for a view
     @StateObject private var viewModel: RCAppointmentViewModel
 
     init(appointment: Appointment) {

@@ -1,6 +1,5 @@
 import Foundation
 
-@MainActor
 class RCDataLoader: ObservableObject {
     
     // Singleton instance
