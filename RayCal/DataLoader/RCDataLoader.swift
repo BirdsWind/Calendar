@@ -1,6 +1,6 @@
 import Foundation
 
-class RCDataLoader: ObservableObject {
+final class RCDataLoader: ObservableObject, Sendable {
     
     // Singleton instance
     static let shared = RCDataLoader()
